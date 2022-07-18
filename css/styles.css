@@ -191,8 +191,19 @@ address {
 
 .hero-section {
   background-color: var(--Dark-bg-cl-1);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/bcg-img.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   padding: 200px 0;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .hero-button:hover,
 .hero-button:focus {
