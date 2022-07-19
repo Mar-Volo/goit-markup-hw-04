@@ -161,10 +161,12 @@ address {
 
 .mail-icon {
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .smartphone-icon {
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .mail,
@@ -172,7 +174,6 @@ address {
   color: var(--header-phone-number);
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 /* hero section */
@@ -196,13 +197,14 @@ address {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('../images/bcg-img.png');
+    url("../images/bcg-Img.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   padding: 200px 0;
   max-width: 1600px;
+  height: 600px;
   margin: 0 auto;
 }
 .hero-button:hover,
@@ -382,8 +384,11 @@ address {
 }
 
 .clients-link {
-  display: block;
-  padding: 16px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
   border: 1px solid var(--social-link-cl);
   border-radius: 4px;
   box-sizing: border-box;
@@ -397,10 +402,7 @@ address {
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--social-link-bg-accent-cl);
-}
-
-.clients-link:hover .clients-icon {
-  fill: var(--social-link-bg-accent-cl);
+  color: var(--accent-txt-cl);
 }
 
 /* footer section */
@@ -465,7 +467,7 @@ address {
   margin-left: 70px;
 }
 
-.footer-socials-icons-conteiner-h {
+.footer-socials-icons-conteiner-p {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
@@ -547,9 +549,11 @@ PORTFOLIO SECTION
 .portfolio-item {
   flex-basis: calc((100% - 30px * 2) / 3);
 }
-
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-link {
+  display: block;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
